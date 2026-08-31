@@ -4,38 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#050a0b" />
-    <meta name="description" content="An experimental numbered interface showcase." />
-    <title>Numbered Interface Showcase</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta name="description" content="一个可用于产品介绍或个人作品展示的高级交互式前端页面。" />
+    <title>Interface Showcase · 交互作品集</title>
+    <script type="module" crossorigin src="./app.js"></script>
+    <link rel="stylesheet" crossorigin href="./styles.css">
   </head>
   <body>
-    <div class="deck" id="deck">
-      <div class="backdrop"><i></i><i></i><i></i></div>
-      <div class="grain"></div>
-
-      <header class="topbar">
-        <a class="mark" href="#01" aria-label="01"><span>01</span><i></i></a>
-        <div class="progress"><i id="progress"></i></div>
-        <button class="tour" id="tour" type="button" aria-label="自动播放"><span></span><b>▶</b></button>
-      </header>
-
-      <nav class="wheel" aria-label="页面编号">
-        <div class="wheel-ring ring-a"></div>
-        <div class="wheel-ring ring-b"></div>
-        <div class="wheel-ring ring-c"></div>
-        <div id="wheelNodes"></div>
-      </nav>
-
-      <main class="stage" id="stage" aria-live="polite"></main>
-
-      <footer class="footer">
-        <button id="previous" type="button" aria-label="上一页">←</button>
-        <span id="currentNumber">01</span>
-        <div class="ticks" id="ticks"></div>
-        <span id="totalNumber">18</span>
-        <button id="next" type="button" aria-label="下一页">→</button>
-      </footer>
-    </div>
-    <script type="module" src="./app.js"></script>
+    <div id="root"></div>
   </body>
 </html>
